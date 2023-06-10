@@ -21,10 +21,10 @@ function tri(strings ) {
   return strings.sort(comparer)
 }
 
-const inpt = 'input.txt';
+const inpt = 'src/input.txt';
 const fileS = fs.readFileSync(inpt, 'utf8').split('\n')
 
 const resultat = tri(fileS);
 
-const outpt = 'output.txt';
+const outpt = 'src/output.txt';
 fs.writeFileSync(outpt, resultat.join('\n'));
