@@ -1,0 +1,44 @@
+<div style="margin-top: 50px;">
+    <table cellpadding="0" cellspacing="0" style="direction: rtl;font-family: Nunito, sans-serif; font-size: 15px; font-weight: 400; max-width: 600px; border: none; margin: 0 auto; border-radius: 6px; overflow: hidden; background-color: #fff; box-shadow: 0 0 3px rgba(60, 72, 88, 0.15);">
+        <thead>
+            <tr style="background-color: white; padding: 3px 0; line-height: 68px; text-align: center; color: #fff; font-size: 24px; font-weight: 700; letter-spacing: 1px;">
+                <th scope="col"><img src="https://farmasi.ly/pub/media/logo/default/logo-site.png" style="padding-top: 24px;width: 40%;"></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td style="padding: 48px 24px 0; color: #161c2d; font-size: 18px; font-weight: 600;">
+                    هذه قائمة لكودات المنتجات التي ستنتهي صلاحيتها من شهر إلى ثلاثة أشهر
+                </tr>
+        
+            {{#each articles}}
+
+            <tr>
+
+               <td style="padding: 4px 24px;color: #161c2d; font-size: 18px; font-weight: 500;">
+                <p> <b>الكود</b>  : {{this.product}}</p>
+                <p> <b>الإسم</b> : {{this.LibelleArticle}}</p>
+                <p> <b>تاريخ انتهاء الصلاحية</b>:{{this.expirationDate}}</p>
+
+               </td> 
+
+            </tr>
+            {{/each}}
+
+            
+
+            <tr>
+                <td style="padding: 15px 24px 15px; color: #8492a6;">
+                    farmasi.ly <br> Support Team
+                </td>
+            </tr>
+
+            <tr>
+                <td style="padding: 16px 8px; color: #8492a6; background-color: #f8f9fc; text-align: center;">
+                    © {{year}} farmasi.ly
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
